@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ButtonsHeader from "./ButtonsHeader.astro";
+---
+
+<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+  <div class="mx-auto text-center mb-8 lg:mb-16">
+    <h1 class="mb-4 text-5xl tracking-tighter font-extrabold text-white">
+      SpaceX Launches 🚀
+    </h1>
+    <p class="font-light text-gray-500 dark:text-gray-400">
+      All the information about spacex launches
+    </p>
+  </div>
+  <nav
+    class="flex flex-col items-center justify-between w-full text-center md:flex-row"
+  >
+    <ButtonsHeader href="/">Ultimos lanzamientos</ButtonsHeader>
+    <ButtonsHeader href="/oldest">Los más viejos</ButtonsHeader>
+  </nav>
+</header>
